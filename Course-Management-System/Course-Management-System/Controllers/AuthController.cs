@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Authorization;
 using System.Security.Claims;
 using Course_Management_System.Models.DTO;
 using Microsoft.IdentityModel.Tokens;
+using Course_Management_System.Data;
 
 namespace CourseManagementSystem.API.Controllers
 {
@@ -20,12 +21,16 @@ namespace CourseManagementSystem.API.Controllers
         private readonly UserManager<ApplicationUser> userManager;
         private readonly ITokenRepository tokenRepository;
         private readonly IEmailSender emailSender;
+        private readonly CoursesManagmentSystemDbContext dbcontext;
 
-        public AuthController(UserManager<ApplicationUser> userManager, ITokenRepository tokenRepository, IEmailSender emailSender)
+        public AuthController(UserManager<ApplicationUser> userManager,
+            ITokenRepository tokenRepository, IEmailSender emailSender,
+            CoursesManagmentSystemDbContext dbcontext)
         {
             this.userManager = userManager;
             this.tokenRepository = tokenRepository;
             this.emailSender = emailSender;
+            this.dbcontext = dbcontext;
         }
 
         [HttpPost("Register")]
@@ -53,7 +58,11 @@ namespace CourseManagementSystem.API.Controllers
 
                     await emailSender.SendEmailAsync(identityUser.Email, "Email Confirmation", $"Your confirmation code: {code}");
 
+                    await dbcontext.ApplicationUsers.AddAsync(identityUser);
+                    await dbcontext.SaveChangesAsync();
+
                     return Ok("You registered successfully. Check your email for the verification code.");
+
                 }
             }
             return BadRequest("Something went wrong");

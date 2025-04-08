@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Course_Management_System.Models.Domain;
+using CourseManagementSystem.API.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace Course_Management_System.Data
 {
@@ -8,5 +10,8 @@ namespace Course_Management_System.Data
             : base(options)
         {
         }
+
+        public DbSet<Course> Courses { get; set; }
+        public DbSet<ApplicationUser> ApplicationUsers { get; set; }
     }
 }

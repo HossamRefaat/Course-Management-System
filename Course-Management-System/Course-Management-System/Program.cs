@@ -1,5 +1,7 @@
 
 using Course_Management_System.Data;
+using Course_Management_System.Repositories.Implementation;
+using Course_Management_System.Repositories.Interfaces;
 using CourseManagementSystem.API.Helper;
 using CourseManagementSystem.API.Mappings;
 using CourseManagementSystem.API.Models;
@@ -64,6 +66,7 @@ namespace Course_Management_System
 
             builder.Services.AddTransient<IEmailSender, EmailSender>();
             builder.Services.AddScoped<ITokenRepository, TokenRepository>();
+            builder.Services.AddScoped<ICourseRepository, CourseRepository>();
 
             builder.Services.AddAutoMapper(typeof(AutoMapperProfiles));
 
