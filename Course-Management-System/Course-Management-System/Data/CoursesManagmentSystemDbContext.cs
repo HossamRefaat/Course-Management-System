@@ -13,5 +13,6 @@ namespace Course_Management_System.Data
 
         public DbSet<Course> Courses { get; set; }
         public DbSet<ApplicationUser> ApplicationUsers { get; set; }
+        public DbSet<Module> Modules { get; set; }
     }
 }

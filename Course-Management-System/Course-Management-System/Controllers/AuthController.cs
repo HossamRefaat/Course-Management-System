@@ -138,6 +138,11 @@ namespace CourseManagementSystem.API.Controllers
             var user = await userManager.FindByEmailAsync(loginRequestDto.Email);
             if(user != null)
             {
+                if (!user.EmailConfirmed)
+                {
+                    return BadRequest("Email is not confirmed.");
+                }
+
                 var checkPassword = await userManager.CheckPasswordAsync(user, loginRequestDto.Password);
 
                 if (checkPassword)

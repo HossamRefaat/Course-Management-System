@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Course_Management_System.Migrations.CoursesManagmentSystemDb
 {
     [DbContext(typeof(CoursesManagmentSystemDbContext))]
-    [Migration("20250408102924_Initial")]
-    partial class Initial
+    [Migration("20250409161452_Add instructor Id column to module table")]
+    partial class AddinstructorIdcolumntomoduletable
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -125,6 +125,34 @@ namespace Course_Management_System.Migrations.CoursesManagmentSystemDb
                     b.ToTable("Courses");
                 });
 
+            modelBuilder.Entity("Course_Management_System.Models.Domain.Module", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("CourseId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("InstructorId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CourseId");
+
+                    b.ToTable("Modules");
+                });
+
             modelBuilder.Entity("Course_Management_System.Models.Domain.Course", b =>
                 {
                     b.HasOne("CourseManagementSystem.API.Models.ApplicationUser", "Instructor")
@@ -134,6 +162,22 @@ namespace Course_Management_System.Migrations.CoursesManagmentSystemDb
                         .IsRequired();
 
                     b.Navigation("Instructor");
+                });
+
+            modelBuilder.Entity("Course_Management_System.Models.Domain.Module", b =>
+                {
+                    b.HasOne("Course_Management_System.Models.Domain.Course", "Course")
+                        .WithMany("Modules")
+                        .HasForeignKey("CourseId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Course");
+                });
+
+            modelBuilder.Entity("Course_Management_System.Models.Domain.Course", b =>
+                {
+                    b.Navigation("Modules");
                 });
 #pragma warning restore 612, 618
         }

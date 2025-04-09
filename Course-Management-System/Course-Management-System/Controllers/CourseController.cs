@@ -69,6 +69,16 @@ namespace Course_Management_System.Controllers
             return Ok(courseDto);
         }
 
+        [HttpGet("instructor/{instructorId}")]
+        public async Task<IActionResult> GetByInstructorId([FromRoute] string instructorId)
+        {
+            var courses = await courseRepository.GetCoursesByInstructorIdAsync(instructorId);
+            if (courses == null)
+                return NotFound();
+            var courseDtos = mapper.Map<IEnumerable<GetCourseRequestDto>>(courses);
+            return Ok(courseDtos);
+        }
+
         [HttpPut]
         [Route("{courseId:guid}")]
         [Authorize(Roles = "Instructor")]
@@ -121,6 +131,7 @@ namespace Course_Management_System.Controllers
 
             return NoContent();  
         }
+
 
     }
 }

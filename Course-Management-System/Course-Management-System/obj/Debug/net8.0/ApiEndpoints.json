@@ -199,5 +199,111 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Course_Management_System.Controllers.CourseController",
+    "Method": "GetByInstructorId",
+    "RelativePath": "api/Course/instructor/{instructorId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "instructorId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Course_Management_System.Controllers.ModuleController",
+    "Method": "Create",
+    "RelativePath": "api/Module/{courseId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "courseId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "module",
+        "Type": "Course_Management_System.Models.DTO.CreateModuleRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Course_Management_System.Controllers.ModuleController",
+    "Method": "GetById",
+    "RelativePath": "api/Module/{moduleId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "moduleId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Course_Management_System.Controllers.ModuleController",
+    "Method": "UpdateModule",
+    "RelativePath": "api/Module/{moduleId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "moduleId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "Course_Management_System.Models.DTO.UpdateModuleRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Course_Management_System.Controllers.ModuleController",
+    "Method": "DeleteModule",
+    "RelativePath": "api/Module/{moduleId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "moduleId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Course_Management_System.Controllers.ModuleController",
+    "Method": "GetByCourseId",
+    "RelativePath": "api/Module/courses/{courseId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "courseId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]
