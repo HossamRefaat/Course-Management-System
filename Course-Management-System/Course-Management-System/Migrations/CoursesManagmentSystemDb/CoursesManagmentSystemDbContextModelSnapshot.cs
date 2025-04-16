@@ -150,6 +150,35 @@ namespace Course_Management_System.Migrations.CoursesManagmentSystemDb
                     b.ToTable("Modules");
                 });
 
+            modelBuilder.Entity("Course_Management_System.Models.Domain.Video", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FileExtension")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FileName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FilePath")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<long>("FileSizeInBytes")
+                        .HasColumnType("bigint");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Videos");
+                });
+
             modelBuilder.Entity("Course_Management_System.Models.Domain.Course", b =>
                 {
                     b.HasOne("CourseManagementSystem.API.Models.ApplicationUser", "Instructor")

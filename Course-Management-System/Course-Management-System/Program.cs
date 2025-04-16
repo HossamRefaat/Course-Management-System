@@ -9,6 +9,7 @@ using CourseManagementSystem.API.Repositories;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.FileProviders;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Text;
@@ -30,6 +31,8 @@ namespace Course_Management_System
                     options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve;
                     options.JsonSerializerOptions.WriteIndented = true;
                 });
+
+            builder.Services.AddHttpContextAccessor();
 
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
@@ -75,6 +78,7 @@ namespace Course_Management_System
             builder.Services.AddScoped<ITokenRepository, TokenRepository>();
             builder.Services.AddScoped<ICourseRepository, CourseRepository>();
             builder.Services.AddScoped<IModuleRepository, ModuleRepository>();
+            builder.Services.AddScoped<IVideoRepository, VideoRepository>();
 
             builder.Services.AddAutoMapper(typeof(AutoMapperProfiles));
 
@@ -128,6 +132,12 @@ namespace Course_Management_System
             app.UseAuthentication();
 
             app.UseAuthorization();
+
+            app.UseStaticFiles(new StaticFileOptions
+            {
+                FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), "Videos")),
+                RequestPath = "/Videos"
+            });
 
             app.MapControllers();
 
