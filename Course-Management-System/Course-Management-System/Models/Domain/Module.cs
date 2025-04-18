@@ -22,5 +22,6 @@ namespace Course_Management_System.Models.Domain
 
         //Nav props
         public Course Course { get; set; }
+        public ICollection<Lesson> Lessons { get; set; }
     }
 }

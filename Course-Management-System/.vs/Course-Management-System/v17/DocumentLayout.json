@@ -3,108 +3,68 @@
   "WorkspaceRootPath": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|c:\\users\\hossa\\onedrive\\desktop\\course-management-system\\course-management-system\\course-management-system\\course-management-system\\controllers\\videocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|solutionrelative:course-management-system\\controllers\\videocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|c:\\users\\hossa\\onedrive\\desktop\\course-management-system\\course-management-system\\course-management-system\\course-management-system\\coursemanagementsystem.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|solutionrelative:course-management-system\\coursemanagementsystem.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|c:\\users\\hossa\\onedrive\\desktop\\course-management-system\\course-management-system\\course-management-system\\course-management-system\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|solutionrelative:course-management-system\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|c:\\users\\hossa\\onedrive\\desktop\\course-management-system\\course-management-system\\course-management-system\\course-management-system\\repositories\\implementation\\modulerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|solutionrelative:course-management-system\\repositories\\implementation\\modulerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|c:\\users\\hossa\\onedrive\\desktop\\course-management-system\\course-management-system\\course-management-system\\course-management-system\\models\\domain\\lesson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|solutionrelative:course-management-system\\models\\domain\\lesson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|c:\\users\\hossa\\onedrive\\desktop\\course-management-system\\course-management-system\\course-management-system\\course-management-system\\repositories\\implementation\\videorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|solutionrelative:course-management-system\\repositories\\implementation\\videorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|c:\\users\\hossa\\onedrive\\desktop\\course-management-system\\course-management-system\\course-management-system\\course-management-system\\repositories\\interfaces\\ivideorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|solutionrelative:course-management-system\\repositories\\interfaces\\ivideorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|c:\\users\\hossa\\onedrive\\desktop\\course-management-system\\course-management-system\\course-management-system\\course-management-system\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|solutionrelative:course-management-system\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|c:\\users\\hossa\\onedrive\\desktop\\course-management-system\\course-management-system\\course-management-system\\course-management-system\\repositories\\implementation\\courserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|solutionrelative:course-management-system\\repositories\\implementation\\courserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|c:\\users\\hossa\\onedrive\\desktop\\course-management-system\\course-management-system\\course-management-system\\course-management-system\\controllers\\videocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|solutionrelative:course-management-system\\controllers\\videocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|c:\\users\\hossa\\onedrive\\desktop\\course-management-system\\course-management-system\\course-management-system\\course-management-system\\repositories\\implementation\\tokenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|solutionrelative:course-management-system\\repositories\\implementation\\tokenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|c:\\users\\hossa\\onedrive\\desktop\\course-management-system\\course-management-system\\course-management-system\\course-management-system\\controllers\\lessoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|solutionrelative:course-management-system\\controllers\\lessoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|c:\\users\\hossa\\onedrive\\desktop\\course-management-system\\course-management-system\\course-management-system\\course-management-system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|solutionrelative:course-management-system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|c:\\users\\hossa\\onedrive\\desktop\\course-management-system\\course-management-system\\course-management-system\\course-management-system\\repositories\\implementation\\lessonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|solutionrelative:course-management-system\\repositories\\implementation\\lessonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|c:\\users\\hossa\\onedrive\\desktop\\course-management-system\\course-management-system\\course-management-system\\course-management-system\\controllers\\modulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|solutionrelative:course-management-system\\controllers\\modulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|c:\\users\\hossa\\onedrive\\desktop\\course-management-system\\course-management-system\\course-management-system\\course-management-system\\data\\coursesmanagmentsystemdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|solutionrelative:course-management-system\\data\\coursesmanagmentsystemdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|c:\\users\\hossa\\onedrive\\desktop\\course-management-system\\course-management-system\\course-management-system\\course-management-system\\models\\domain\\module.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|solutionrelative:course-management-system\\models\\domain\\module.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Migrations\\CoursesManagmentSystemDb\\20250415171043_Add Video Table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Course-Management-System\\Migrations\\CoursesManagmentSystemDb\\20250415171043_Add Video Table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|c:\\users\\hossa\\onedrive\\desktop\\course-management-system\\course-management-system\\course-management-system\\course-management-system\\repositories\\interfaces\\ilessonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|solutionrelative:course-management-system\\repositories\\interfaces\\ilessonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Migrations\\CoursesManagmentSystemDb\\20250415172437_Add Video Table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Course-Management-System\\Migrations\\CoursesManagmentSystemDb\\20250415172437_Add Video Table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|c:\\users\\hossa\\onedrive\\desktop\\course-management-system\\course-management-system\\course-management-system\\course-management-system\\models\\dto\\updatelessonrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|solutionrelative:course-management-system\\models\\dto\\updatelessonrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Migrations\\CoursesManagmentSystemDb\\20250415172150_Add Video Table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Course-Management-System\\Migrations\\CoursesManagmentSystemDb\\20250415172150_Add Video Table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|c:\\users\\hossa\\onedrive\\desktop\\course-management-system\\course-management-system\\course-management-system\\course-management-system\\models\\dto\\createmodulerequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|solutionrelative:course-management-system\\models\\dto\\createmodulerequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|c:\\users\\hossa\\onedrive\\desktop\\course-management-system\\course-management-system\\course-management-system\\course-management-system\\data\\coursesmanagmentsystemauthdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|solutionrelative:course-management-system\\data\\coursesmanagmentsystemauthdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|c:\\users\\hossa\\onedrive\\desktop\\course-management-system\\course-management-system\\course-management-system\\course-management-system\\models\\dto\\uplaodvideorequestdtocs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|solutionrelative:course-management-system\\models\\dto\\uplaodvideorequestdtocs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|c:\\users\\hossa\\onedrive\\desktop\\course-management-system\\course-management-system\\course-management-system\\course-management-system\\models\\dto\\moduledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|solutionrelative:course-management-system\\models\\dto\\moduledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|c:\\users\\hossa\\onedrive\\desktop\\course-management-system\\course-management-system\\course-management-system\\course-management-system\\repositories\\implementation\\modulerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|solutionrelative:course-management-system\\repositories\\implementation\\modulerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|c:\\users\\hossa\\onedrive\\desktop\\course-management-system\\course-management-system\\course-management-system\\course-management-system\\mappings\\automapperprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|solutionrelative:course-management-system\\mappings\\automapperprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|c:\\users\\hossa\\onedrive\\desktop\\course-management-system\\course-management-system\\course-management-system\\course-management-system\\models\\dto\\updatemodulerequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|solutionrelative:course-management-system\\models\\dto\\updatemodulerequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|c:\\users\\hossa\\onedrive\\desktop\\course-management-system\\course-management-system\\course-management-system\\course-management-system\\models\\dto\\createlessonrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|solutionrelative:course-management-system\\models\\dto\\createlessonrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|c:\\users\\hossa\\onedrive\\desktop\\course-management-system\\course-management-system\\course-management-system\\course-management-system\\models\\domain\\module.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|solutionrelative:course-management-system\\models\\domain\\module.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Migrations\\CoursesManagmentSystemDb\\20250409161031_Add intructor Id column to module table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Course-Management-System\\Migrations\\CoursesManagmentSystemDb\\20250409161031_Add intructor Id column to module table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|c:\\users\\hossa\\onedrive\\desktop\\course-management-system\\course-management-system\\course-management-system\\course-management-system\\repositories\\interfaces\\imodulerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|solutionrelative:course-management-system\\repositories\\interfaces\\imodulerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|c:\\users\\hossa\\onedrive\\desktop\\course-management-system\\course-management-system\\course-management-system\\course-management-system\\repositories\\implementation\\courserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|solutionrelative:course-management-system\\repositories\\implementation\\courserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|c:\\users\\hossa\\onedrive\\desktop\\course-management-system\\course-management-system\\course-management-system\\course-management-system\\models\\domain\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|solutionrelative:course-management-system\\models\\domain\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|c:\\users\\hossa\\onedrive\\desktop\\course-management-system\\course-management-system\\course-management-system\\course-management-system\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|solutionrelative:course-management-system\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|c:\\users\\hossa\\onedrive\\desktop\\course-management-system\\course-management-system\\course-management-system\\course-management-system\\repositories\\interfaces\\icourserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|solutionrelative:course-management-system\\repositories\\interfaces\\icourserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|c:\\users\\hossa\\onedrive\\desktop\\course-management-system\\course-management-system\\course-management-system\\course-management-system\\models\\domain\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13F20093-5FB2-4789-B2B9-BE2BD2D81C1B}|Course-Management-System\\CourseManagementSystem.API.csproj|solutionrelative:course-management-system\\models\\domain\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -114,338 +74,202 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "VideoController.cs",
-              "DocumentMoniker": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Controllers\\VideoController.cs",
-              "RelativeDocumentMoniker": "Course-Management-System\\Controllers\\VideoController.cs",
-              "ToolTip": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Controllers\\VideoController.cs",
-              "RelativeToolTip": "Course-Management-System\\Controllers\\VideoController.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAYwC4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T16:05:02.693Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Program.cs",
-              "RelativeDocumentMoniker": "Course-Management-System\\Program.cs",
-              "ToolTip": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Program.cs",
-              "RelativeToolTip": "Course-Management-System\\Program.cs",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAvwIwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T09:22:37.343Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ModuleRepository.cs",
-              "DocumentMoniker": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Repositories\\Implementation\\ModuleRepository.cs",
-              "RelativeDocumentMoniker": "Course-Management-System\\Repositories\\Implementation\\ModuleRepository.cs",
-              "ToolTip": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Repositories\\Implementation\\ModuleRepository.cs",
-              "RelativeToolTip": "Course-Management-System\\Repositories\\Implementation\\ModuleRepository.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAYwDcAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T10:47:58.44Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "TokenRepository.cs",
-              "DocumentMoniker": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Repositories\\Implementation\\TokenRepository.cs",
-              "RelativeDocumentMoniker": "Course-Management-System\\Repositories\\Implementation\\TokenRepository.cs",
-              "ToolTip": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Repositories\\Implementation\\TokenRepository.cs",
-              "RelativeToolTip": "Course-Management-System\\Repositories\\Implementation\\TokenRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T09:11:54.433Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CourseRepository.cs",
-              "DocumentMoniker": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Repositories\\Implementation\\CourseRepository.cs",
-              "RelativeDocumentMoniker": "Course-Management-System\\Repositories\\Implementation\\CourseRepository.cs",
-              "ToolTip": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Repositories\\Implementation\\CourseRepository.cs",
-              "RelativeToolTip": "Course-Management-System\\Repositories\\Implementation\\CourseRepository.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAkwCoAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T09:11:55.548Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IVideoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Repositories\\Interfaces\\IVideoRepository.cs",
-              "RelativeDocumentMoniker": "Course-Management-System\\Repositories\\Interfaces\\IVideoRepository.cs",
-              "ToolTip": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Repositories\\Interfaces\\IVideoRepository.cs",
-              "RelativeToolTip": "Course-Management-System\\Repositories\\Interfaces\\IVideoRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T16:57:58.402Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CourseController.cs",
-              "DocumentMoniker": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Controllers\\CourseController.cs",
-              "RelativeDocumentMoniker": "Course-Management-System\\Controllers\\CourseController.cs",
-              "ToolTip": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Controllers\\CourseController.cs",
-              "RelativeToolTip": "Course-Management-System\\Controllers\\CourseController.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAYwD0AAAARAAAAAAAAAA==",
+              "Title": "Lesson.cs",
+              "DocumentMoniker": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Models\\Domain\\Lesson.cs",
+              "RelativeDocumentMoniker": "Course-Management-System\\Models\\Domain\\Lesson.cs",
+              "ToolTip": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Models\\Domain\\Lesson.cs",
+              "RelativeToolTip": "Course-Management-System\\Models\\Domain\\Lesson.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T09:12:20.341Z",
+              "WhenOpened": "2025-04-16T18:23:57.158Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "VideoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Repositories\\Implementation\\VideoRepository.cs",
-              "RelativeDocumentMoniker": "Course-Management-System\\Repositories\\Implementation\\VideoRepository.cs",
-              "ToolTip": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Repositories\\Implementation\\VideoRepository.cs",
-              "RelativeToolTip": "Course-Management-System\\Repositories\\Implementation\\VideoRepository.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAYwDYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T17:01:29.62Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "20250415171043_Add Video Table.cs",
-              "DocumentMoniker": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Migrations\\CoursesManagmentSystemDb\\20250415171043_Add Video Table.cs",
-              "RelativeDocumentMoniker": "Course-Management-System\\Migrations\\CoursesManagmentSystemDb\\20250415171043_Add Video Table.cs",
-              "ToolTip": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Migrations\\CoursesManagmentSystemDb\\20250415171043_Add Video Table.cs",
-              "RelativeToolTip": "Course-Management-System\\Migrations\\CoursesManagmentSystemDb\\20250415171043_Add Video Table.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T17:10:43.329Z",
+              "DocumentIndex": 0,
+              "Title": "CourseManagementSystem.API",
+              "DocumentMoniker": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\CourseManagementSystem.API.csproj",
+              "RelativeDocumentMoniker": "Course-Management-System\\CourseManagementSystem.API.csproj",
+              "ToolTip": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\CourseManagementSystem.API.csproj",
+              "RelativeToolTip": "Course-Management-System\\CourseManagementSystem.API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-18T16:22:30.141Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "ModuleController.cs",
-              "DocumentMoniker": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Controllers\\ModuleController.cs",
-              "RelativeDocumentMoniker": "Course-Management-System\\Controllers\\ModuleController.cs",
-              "ToolTip": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Controllers\\ModuleController.cs",
-              "RelativeToolTip": "Course-Management-System\\Controllers\\ModuleController.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAkwHoAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T10:43:29.865Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "CoursesManagmentSystemDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Data\\CoursesManagmentSystemDbContext.cs",
-              "RelativeDocumentMoniker": "Course-Management-System\\Data\\CoursesManagmentSystemDbContext.cs",
-              "ToolTip": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Data\\CoursesManagmentSystemDbContext.cs",
-              "RelativeToolTip": "Course-Management-System\\Data\\CoursesManagmentSystemDbContext.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBIAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T17:06:30.71Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "20250415172437_Add Video Table.cs",
-              "DocumentMoniker": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Migrations\\CoursesManagmentSystemDb\\20250415172437_Add Video Table.cs",
-              "RelativeDocumentMoniker": "Course-Management-System\\Migrations\\CoursesManagmentSystemDb\\20250415172437_Add Video Table.cs",
-              "ToolTip": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Migrations\\CoursesManagmentSystemDb\\20250415172437_Add Video Table.cs",
-              "RelativeToolTip": "Course-Management-System\\Migrations\\CoursesManagmentSystemDb\\20250415172437_Add Video Table.cs",
-              "ViewState": "AgIAAFsAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T17:24:38.139Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "20250415172150_Add Video Table.cs",
-              "DocumentMoniker": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Migrations\\CoursesManagmentSystemDb\\20250415172150_Add Video Table.cs",
-              "RelativeDocumentMoniker": "Course-Management-System\\Migrations\\CoursesManagmentSystemDb\\20250415172150_Add Video Table.cs",
-              "ToolTip": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Migrations\\CoursesManagmentSystemDb\\20250415172150_Add Video Table.cs",
-              "RelativeToolTip": "Course-Management-System\\Migrations\\CoursesManagmentSystemDb\\20250415172150_Add Video Table.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAQwBYAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T17:21:50.542Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "CoursesManagmentSystemAuthDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Data\\CoursesManagmentSystemAuthDbContext.cs",
-              "RelativeDocumentMoniker": "Course-Management-System\\Data\\CoursesManagmentSystemAuthDbContext.cs",
-              "ToolTip": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Data\\CoursesManagmentSystemAuthDbContext.cs",
-              "RelativeToolTip": "Course-Management-System\\Data\\CoursesManagmentSystemAuthDbContext.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T17:06:28.209Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "CreateModuleRequestDto.cs",
-              "DocumentMoniker": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Models\\DTO\\CreateModuleRequestDto.cs",
-              "RelativeDocumentMoniker": "Course-Management-System\\Models\\DTO\\CreateModuleRequestDto.cs",
-              "ToolTip": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Models\\DTO\\CreateModuleRequestDto.cs",
-              "RelativeToolTip": "Course-Management-System\\Models\\DTO\\CreateModuleRequestDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T11:09:40.666Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "UplaodVideoRequestDtocs.cs",
-              "DocumentMoniker": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Models\\DTO\\UplaodVideoRequestDtocs.cs",
-              "RelativeDocumentMoniker": "Course-Management-System\\Models\\DTO\\UplaodVideoRequestDtocs.cs",
-              "ToolTip": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Models\\DTO\\UplaodVideoRequestDtocs.cs",
-              "RelativeToolTip": "Course-Management-System\\Models\\DTO\\UplaodVideoRequestDtocs.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T16:17:46.282Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "UpdateModuleRequestDto.cs",
-              "DocumentMoniker": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Models\\DTO\\UpdateModuleRequestDto.cs",
-              "RelativeDocumentMoniker": "Course-Management-System\\Models\\DTO\\UpdateModuleRequestDto.cs",
-              "ToolTip": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Models\\DTO\\UpdateModuleRequestDto.cs",
-              "RelativeToolTip": "Course-Management-System\\Models\\DTO\\UpdateModuleRequestDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T15:14:19.962Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "AutoMapperProfiles.cs",
-              "DocumentMoniker": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Mappings\\AutoMapperProfiles.cs",
-              "RelativeDocumentMoniker": "Course-Management-System\\Mappings\\AutoMapperProfiles.cs",
-              "ToolTip": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Mappings\\AutoMapperProfiles.cs",
-              "RelativeToolTip": "Course-Management-System\\Mappings\\AutoMapperProfiles.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T12:02:22.97Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "ModuleDto.cs",
-              "DocumentMoniker": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Models\\DTO\\ModuleDto.cs",
-              "RelativeDocumentMoniker": "Course-Management-System\\Models\\DTO\\ModuleDto.cs",
-              "ToolTip": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Models\\DTO\\ModuleDto.cs",
-              "RelativeToolTip": "Course-Management-System\\Models\\DTO\\ModuleDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T11:57:28.619Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "20250409161031_Add intructor Id column to module table.cs",
-              "DocumentMoniker": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Migrations\\CoursesManagmentSystemDb\\20250409161031_Add intructor Id column to module table.cs",
-              "RelativeDocumentMoniker": "Course-Management-System\\Migrations\\CoursesManagmentSystemDb\\20250409161031_Add intructor Id column to module table.cs",
-              "ToolTip": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Migrations\\CoursesManagmentSystemDb\\20250409161031_Add intructor Id column to module table.cs",
-              "RelativeToolTip": "Course-Management-System\\Migrations\\CoursesManagmentSystemDb\\20250409161031_Add intructor Id column to module table.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T16:10:31.455Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Course-Management-System\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Course-Management-System\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAHAAAAAAAAAAAAAkwIcAAABaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T09:26:48.288Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "ICourseRepository.cs",
-              "DocumentMoniker": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Repositories\\Interfaces\\ICourseRepository.cs",
-              "RelativeDocumentMoniker": "Course-Management-System\\Repositories\\Interfaces\\ICourseRepository.cs",
-              "ToolTip": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Repositories\\Interfaces\\ICourseRepository.cs",
-              "RelativeToolTip": "Course-Management-System\\Repositories\\Interfaces\\ICourseRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T09:11:46.681Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "IModuleRepository.cs",
-              "DocumentMoniker": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Repositories\\Interfaces\\IModuleRepository.cs",
-              "RelativeDocumentMoniker": "Course-Management-System\\Repositories\\Interfaces\\IModuleRepository.cs",
-              "ToolTip": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Repositories\\Interfaces\\IModuleRepository.cs",
-              "RelativeToolTip": "Course-Management-System\\Repositories\\Interfaces\\IModuleRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T09:11:16.516Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "ApplicationUser.cs",
-              "DocumentMoniker": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Models\\Domain\\ApplicationUser.cs",
-              "RelativeDocumentMoniker": "Course-Management-System\\Models\\Domain\\ApplicationUser.cs",
-              "ToolTip": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Models\\Domain\\ApplicationUser.cs",
-              "RelativeToolTip": "Course-Management-System\\Models\\Domain\\ApplicationUser.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBUAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T08:55:27.833Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Course.cs",
-              "DocumentMoniker": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Models\\Domain\\Course.cs",
-              "RelativeDocumentMoniker": "Course-Management-System\\Models\\Domain\\Course.cs",
-              "ToolTip": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Models\\Domain\\Course.cs",
-              "RelativeToolTip": "Course-Management-System\\Models\\Domain\\Course.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T08:44:57.096Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
               "Title": "Module.cs",
               "DocumentMoniker": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Models\\Domain\\Module.cs",
               "RelativeDocumentMoniker": "Course-Management-System\\Models\\Domain\\Module.cs",
               "ToolTip": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Models\\Domain\\Module.cs",
               "RelativeToolTip": "Course-Management-System\\Models\\Domain\\Module.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAgwBQAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T08:42:30.557Z"
+              "WhenOpened": "2025-04-18T15:34:26.421Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UpdateLessonRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Models\\DTO\\UpdateLessonRequestDto.cs",
+              "RelativeDocumentMoniker": "Course-Management-System\\Models\\DTO\\UpdateLessonRequestDto.cs",
+              "ToolTip": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Models\\DTO\\UpdateLessonRequestDto.cs",
+              "RelativeToolTip": "Course-Management-System\\Models\\DTO\\UpdateLessonRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T14:20:29.711Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LessonController.cs",
+              "DocumentMoniker": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Controllers\\LessonController.cs",
+              "RelativeDocumentMoniker": "Course-Management-System\\Controllers\\LessonController.cs",
+              "ToolTip": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Controllers\\LessonController.cs",
+              "RelativeToolTip": "Course-Management-System\\Controllers\\LessonController.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAQwGIAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T21:11:05.956Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LessonRepository.cs",
+              "DocumentMoniker": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Repositories\\Implementation\\LessonRepository.cs",
+              "RelativeDocumentMoniker": "Course-Management-System\\Repositories\\Implementation\\LessonRepository.cs",
+              "ToolTip": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Repositories\\Implementation\\LessonRepository.cs",
+              "RelativeToolTip": "Course-Management-System\\Repositories\\Implementation\\LessonRepository.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAA3wDUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T18:08:57.761Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ModuleController.cs",
+              "DocumentMoniker": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Controllers\\ModuleController.cs",
+              "RelativeDocumentMoniker": "Course-Management-System\\Controllers\\ModuleController.cs",
+              "ToolTip": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Controllers\\ModuleController.cs",
+              "RelativeToolTip": "Course-Management-System\\Controllers\\ModuleController.cs",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAgwHYAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T21:55:36.665Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "VideoController.cs",
+              "DocumentMoniker": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Controllers\\VideoController.cs",
+              "RelativeDocumentMoniker": "Course-Management-System\\Controllers\\VideoController.cs",
+              "ToolTip": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Controllers\\VideoController.cs",
+              "RelativeToolTip": "Course-Management-System\\Controllers\\VideoController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAvwA8AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T16:08:13.24Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "VideoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Repositories\\Implementation\\VideoRepository.cs",
+              "RelativeDocumentMoniker": "Course-Management-System\\Repositories\\Implementation\\VideoRepository.cs",
+              "ToolTip": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Repositories\\Implementation\\VideoRepository.cs",
+              "RelativeToolTip": "Course-Management-System\\Repositories\\Implementation\\VideoRepository.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwCsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T16:08:38.338Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Course-Management-System\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Course-Management-System\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAKMAAAAAAAAAAAAswHAAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T16:11:11.817Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ILessonRepository.cs",
+              "DocumentMoniker": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Repositories\\Interfaces\\ILessonRepository.cs",
+              "RelativeDocumentMoniker": "Course-Management-System\\Repositories\\Interfaces\\ILessonRepository.cs",
+              "ToolTip": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Repositories\\Interfaces\\ILessonRepository.cs",
+              "RelativeToolTip": "Course-Management-System\\Repositories\\Interfaces\\ILessonRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T18:04:37.929Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ModuleRepository.cs",
+              "DocumentMoniker": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Repositories\\Implementation\\ModuleRepository.cs",
+              "RelativeDocumentMoniker": "Course-Management-System\\Repositories\\Implementation\\ModuleRepository.cs",
+              "ToolTip": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Repositories\\Implementation\\ModuleRepository.cs",
+              "RelativeToolTip": "Course-Management-System\\Repositories\\Implementation\\ModuleRepository.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAgwDQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T15:23:06.791Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AutoMapperProfiles.cs",
+              "DocumentMoniker": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Mappings\\AutoMapperProfiles.cs",
+              "RelativeDocumentMoniker": "Course-Management-System\\Mappings\\AutoMapperProfiles.cs",
+              "ToolTip": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Mappings\\AutoMapperProfiles.cs",
+              "RelativeToolTip": "Course-Management-System\\Mappings\\AutoMapperProfiles.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T21:17:35.979Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CreateLessonRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Models\\DTO\\CreateLessonRequestDto.cs",
+              "RelativeDocumentMoniker": "Course-Management-System\\Models\\DTO\\CreateLessonRequestDto.cs",
+              "ToolTip": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Models\\DTO\\CreateLessonRequestDto.cs",
+              "RelativeToolTip": "Course-Management-System\\Models\\DTO\\CreateLessonRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T21:13:30.019Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CourseRepository.cs",
+              "DocumentMoniker": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Repositories\\Implementation\\CourseRepository.cs",
+              "RelativeDocumentMoniker": "Course-Management-System\\Repositories\\Implementation\\CourseRepository.cs",
+              "ToolTip": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Repositories\\Implementation\\CourseRepository.cs",
+              "RelativeToolTip": "Course-Management-System\\Repositories\\Implementation\\CourseRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T18:14:11.349Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Course.cs",
+              "DocumentMoniker": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Models\\Domain\\Course.cs",
+              "RelativeDocumentMoniker": "Course-Management-System\\Models\\Domain\\Course.cs",
+              "ToolTip": "C:\\Users\\hossa\\OneDrive\\Desktop\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Course-Management-System\\Models\\Domain\\Course.cs",
+              "RelativeToolTip": "Course-Management-System\\Models\\Domain\\Course.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T18:10:10.664Z"
             }
           ]
         },

@@ -13,6 +13,8 @@ namespace CourseManagementSystem.API.Mappings
             CreateMap<Course, UpdateCourseRequestDto>().ReverseMap();
             CreateMap<Module, ModuleDto>().ReverseMap();
             CreateMap<Module, UpdateModuleRequestDto>().ReverseMap();
+            CreateMap<Lesson, CreateLessonRequestDto>().ReverseMap();
+            CreateMap<Lesson, UpdateLessonRequestDto>().ReverseMap();
         }
     }
 }

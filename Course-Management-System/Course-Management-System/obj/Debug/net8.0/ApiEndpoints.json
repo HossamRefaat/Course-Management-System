@@ -217,6 +217,59 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Course_Management_System.Controllers.LessonController",
+    "Method": "UpdateLessonAsync",
+    "RelativePath": "api/Lesson/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "Course_Management_System.Models.DTO.UpdateLessonRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Course_Management_System.Controllers.LessonController",
+    "Method": "Delete",
+    "RelativePath": "api/Lesson/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Course_Management_System.Controllers.LessonController",
+    "Method": "Get",
+    "RelativePath": "api/Lesson/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Course_Management_System.Controllers.ModuleController",
     "Method": "Create",
     "RelativePath": "api/Module/{courseId}",
@@ -300,6 +353,43 @@
     "Parameters": [
       {
         "Name": "courseId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Course_Management_System.Controllers.LessonController",
+    "Method": "Create",
+    "RelativePath": "api/modules/{moduleId}/lessons",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "moduleId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "Course_Management_System.Models.DTO.CreateLessonRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Course_Management_System.Controllers.LessonController",
+    "Method": "GetAll",
+    "RelativePath": "api/modules/{moduleId}/lessons",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "moduleId",
         "Type": "System.Guid",
         "IsRequired": true
       }

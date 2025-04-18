@@ -4,6 +4,7 @@ using Course_Management_System.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Course_Management_System.Migrations.CoursesManagmentSystemDb
 {
     [DbContext(typeof(CoursesManagmentSystemDbContext))]
-    partial class CoursesManagmentSystemDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250418154429_add instructor id for lesson table")]
+    partial class addinstructoridforlessontable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

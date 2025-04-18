@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Course_Management_System.Migrations.CoursesManagmentSystemDb
 {
     /// <inheritdoc />
-    public partial class AddVideoTable : Migration
+    public partial class AddLessonTable : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -99,10 +99,37 @@ namespace Course_Management_System.Migrations.CoursesManagmentSystemDb
                         onDelete: ReferentialAction.Cascade);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "Lessons",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    ModuleId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Title = table.Column<string>(type: "nvarchar(10)", maxLength: 10, nullable: false),
+                    Type = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
+                    Content = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Lessons", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Lessons_Modules_ModuleId",
+                        column: x => x.ModuleId,
+                        principalTable: "Modules",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
             migrationBuilder.CreateIndex(
                 name: "IX_Courses_InstructorId",
                 table: "Courses",
                 column: "InstructorId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Lessons_ModuleId",
+                table: "Lessons",
+                column: "ModuleId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Modules_CourseId",
@@ -114,10 +141,13 @@ namespace Course_Management_System.Migrations.CoursesManagmentSystemDb
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Modules");
+                name: "Lessons");
 
             migrationBuilder.DropTable(
                 name: "Videos");
+
+            migrationBuilder.DropTable(
+                name: "Modules");
 
             migrationBuilder.DropTable(
                 name: "Courses");

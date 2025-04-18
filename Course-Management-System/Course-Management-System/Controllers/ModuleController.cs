@@ -92,7 +92,7 @@ namespace Course_Management_System.Controllers
                 return BadRequest(ModelState);
 
             var module = await moduleRepository.GetModuleByIdAsync(moduleId);
-            if (module == null) return NotFound("Course not found");
+            if (module == null) return NotFound("module not found");
 
             var userId = userManager.GetUserId(User);
             if (module.InstructorId != userId)

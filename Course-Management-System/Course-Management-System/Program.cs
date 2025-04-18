@@ -79,6 +79,7 @@ namespace Course_Management_System
             builder.Services.AddScoped<ICourseRepository, CourseRepository>();
             builder.Services.AddScoped<IModuleRepository, ModuleRepository>();
             builder.Services.AddScoped<IVideoRepository, VideoRepository>();
+            builder.Services.AddScoped<ILessonRepository, LessonRepository>();
 
             builder.Services.AddAutoMapper(typeof(AutoMapperProfiles));
 

@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Course_Management_System.Migrations.CoursesManagmentSystemDb
 {
     [DbContext(typeof(CoursesManagmentSystemDbContext))]
-    [Migration("20250415172437_Add Video Table")]
-    partial class AddVideoTable
+    [Migration("20250416215056_Lesson table bug fix")]
+    partial class Lessontablebugfix
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -125,6 +125,38 @@ namespace Course_Management_System.Migrations.CoursesManagmentSystemDb
                     b.ToTable("Courses");
                 });
 
+            modelBuilder.Entity("Course_Management_System.Models.Domain.Lesson", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Content")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid>("ModuleId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<string>("Type")
+                        .IsRequired()
+                        .HasMaxLength(10)
+                        .HasColumnType("nvarchar(10)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ModuleId");
+
+                    b.ToTable("Lessons");
+                });
+
             modelBuilder.Entity("Course_Management_System.Models.Domain.Module", b =>
                 {
                     b.Property<Guid>("Id")
@@ -193,6 +225,17 @@ namespace Course_Management_System.Migrations.CoursesManagmentSystemDb
                     b.Navigation("Instructor");
                 });
 
+            modelBuilder.Entity("Course_Management_System.Models.Domain.Lesson", b =>
+                {
+                    b.HasOne("Course_Management_System.Models.Domain.Module", "Module")
+                        .WithMany("Lessons")
+                        .HasForeignKey("ModuleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Module");
+                });
+
             modelBuilder.Entity("Course_Management_System.Models.Domain.Module", b =>
                 {
                     b.HasOne("Course_Management_System.Models.Domain.Course", "Course")
@@ -207,6 +250,11 @@ namespace Course_Management_System.Migrations.CoursesManagmentSystemDb
             modelBuilder.Entity("Course_Management_System.Models.Domain.Course", b =>
                 {
                     b.Navigation("Modules");
+                });
+
+            modelBuilder.Entity("Course_Management_System.Models.Domain.Module", b =>
+                {
+                    b.Navigation("Lessons");
                 });
 #pragma warning restore 612, 618
         }
