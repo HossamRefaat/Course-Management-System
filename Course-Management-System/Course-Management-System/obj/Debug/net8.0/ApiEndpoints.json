@@ -122,101 +122,6 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "Course_Management_System.Controllers.CourseController",
-    "Method": "Create",
-    "RelativePath": "api/Course",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "request",
-        "Type": "Course_Management_System.Models.DTO.CreateCourseRequestDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Course_Management_System.Controllers.CourseController",
-    "Method": "Get",
-    "RelativePath": "api/Course",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Course_Management_System.Controllers.CourseController",
-    "Method": "GetById",
-    "RelativePath": "api/Course/{courseId}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "courseId",
-        "Type": "System.Guid",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Course_Management_System.Controllers.CourseController",
-    "Method": "Update",
-    "RelativePath": "api/Course/{courseId}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "courseId",
-        "Type": "System.Guid",
-        "IsRequired": true
-      },
-      {
-        "Name": "request",
-        "Type": "Course_Management_System.Models.DTO.UpdateCourseRequestDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Course_Management_System.Controllers.CourseController",
-    "Method": "DeleteCourse",
-    "RelativePath": "api/Course/{courseId}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "courseId",
-        "Type": "System.Guid",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Course_Management_System.Controllers.CourseController",
-    "Method": "GetByInstructorId",
-    "RelativePath": "api/Course/instructor/{instructorId}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "instructorId",
-        "Type": "System.String",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "Course_Management_System.Controllers.LessonController",
     "Method": "UpdateLessonAsync",
     "RelativePath": "api/Lesson/{id}",
@@ -401,6 +306,22 @@
     "Method": "GetVideoById",
     "RelativePath": "api/Video/{Id}",
     "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Course_Management_System.Controllers.VideoController",
+    "Method": "DeleteVideo",
+    "RelativePath": "api/Video/{Id}",
+    "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [

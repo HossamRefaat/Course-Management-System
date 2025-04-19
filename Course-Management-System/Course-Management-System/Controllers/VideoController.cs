@@ -54,6 +54,19 @@ namespace Course_Management_System.Controllers
             return Ok(video);
         }
 
+        [HttpDelete("{id:guid}")]
+        [Authorize(Roles = "Admin,Instructor")]
+        public async Task<IActionResult> DeleteVideo([FromRoute] Guid id)
+        {
+            var isDeleted = await videoRepository.DeleteVideoAsync(id);
+
+            if (!isDeleted)
+                return BadRequest("An error occurred while deleting the video. Please try again later.");
+
+            return Ok("Deleted successfully.");
+        }
+
+
         private void ValidateFileUpload(UplaodVideoRequestDtocs imageUploadRequestDto)
         {
             var allowedExtensions = new[] { ".mp4", ".mov", ".mkv", ".webm" };

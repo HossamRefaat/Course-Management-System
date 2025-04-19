@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Course_Management_System.Migrations.CoursesManagmentSystemDb
 {
     [DbContext(typeof(CoursesManagmentSystemDbContext))]
-    [Migration("20250416215056_Lesson table bug fix")]
-    partial class Lessontablebugfix
+    [Migration("20250418231243_Add Enrollment Table")]
+    partial class AddEnrollmentTable
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -125,6 +125,31 @@ namespace Course_Management_System.Migrations.CoursesManagmentSystemDb
                     b.ToTable("Courses");
                 });
 
+            modelBuilder.Entity("Course_Management_System.Models.Domain.Enrollment", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("CourseId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("EnrolledAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("StudentId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CourseId");
+
+                    b.HasIndex("StudentId");
+
+                    b.ToTable("Enrollments");
+                });
+
             modelBuilder.Entity("Course_Management_System.Models.Domain.Lesson", b =>
                 {
                     b.Property<Guid>("Id")
@@ -136,6 +161,10 @@ namespace Course_Management_System.Migrations.CoursesManagmentSystemDb
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("InstructorId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<Guid>("ModuleId")
                         .HasColumnType("uniqueidentifier");
@@ -225,6 +254,25 @@ namespace Course_Management_System.Migrations.CoursesManagmentSystemDb
                     b.Navigation("Instructor");
                 });
 
+            modelBuilder.Entity("Course_Management_System.Models.Domain.Enrollment", b =>
+                {
+                    b.HasOne("Course_Management_System.Models.Domain.Course", "Course")
+                        .WithMany("Enrollments")
+                        .HasForeignKey("CourseId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("CourseManagementSystem.API.Models.ApplicationUser", "Student")
+                        .WithMany()
+                        .HasForeignKey("StudentId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Course");
+
+                    b.Navigation("Student");
+                });
+
             modelBuilder.Entity("Course_Management_System.Models.Domain.Lesson", b =>
                 {
                     b.HasOne("Course_Management_System.Models.Domain.Module", "Module")
@@ -249,6 +297,8 @@ namespace Course_Management_System.Migrations.CoursesManagmentSystemDb
 
             modelBuilder.Entity("Course_Management_System.Models.Domain.Course", b =>
                 {
+                    b.Navigation("Enrollments");
+
                     b.Navigation("Modules");
                 });
 

@@ -6,5 +6,6 @@ namespace Course_Management_System.Repositories.Interfaces
     {
         Task<Video>? GetVideoByIdAsync(Guid id);
         Task<Video> AddVideoAsync(Video video);
+        Task<bool> DeleteVideoAsync(Guid id);
     }
 }

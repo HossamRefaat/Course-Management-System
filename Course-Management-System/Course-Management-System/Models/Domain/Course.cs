@@ -24,7 +24,7 @@ namespace Course_Management_System.Models.Domain
 
         //Nav props
         public ApplicationUser Instructor { get; set; }
-
         public ICollection<Module> Modules { get; set; }
+        public ICollection<Enrollment> Enrollments { get; set; }
     }
 }

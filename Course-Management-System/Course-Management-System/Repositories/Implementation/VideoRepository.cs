@@ -43,19 +43,28 @@ namespace Course_Management_System.Repositories.Implementation
             return video;
         }
 
-        //public Task<bool> DeleteVideoAsync(Guid id)
-        //{
-        //    throw new NotImplementedException();
-        //}
+        public async Task<bool> DeleteVideoAsync(Guid id)
+        {
+            var video = await dbContext.Videos.FirstOrDefaultAsync(v => v.Id == id);
+            if (video == null) return false;
+
+            string relativePath = video.FilePath.Substring(video.FilePath.IndexOf("Videos"));
+            string fullPath = Path.Combine(Directory.GetCurrentDirectory(), relativePath.Replace('/', Path.DirectorySeparatorChar));
+
+            if (File.Exists(fullPath))
+            {
+                File.Delete(fullPath);
+                dbContext.Videos.Remove(video);
+                await dbContext.SaveChangesAsync();
+                return true;
+            }
+
+            return false;
+        }
 
         public async Task<Video>? GetVideoByIdAsync(Guid id)
         {
            return await dbContext.Videos.FindAsync(id);
         }
-
-        //public Task<bool> VideoExistsAsync(Guid id)
-        //{
-        //    throw new NotImplementedException();
-        //}
     }
 }

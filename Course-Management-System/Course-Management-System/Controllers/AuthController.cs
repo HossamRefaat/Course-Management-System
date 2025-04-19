@@ -23,7 +23,9 @@ namespace CourseManagementSystem.API.Controllers
         private readonly IEmailSender emailSender;
         private readonly CoursesManagmentSystemDbContext dbcontext;
 
-        public AuthController(UserManager<ApplicationUser> userManager,
+        public AuthController
+        (
+            UserManager<ApplicationUser> userManager,
             ITokenRepository tokenRepository, IEmailSender emailSender,
             CoursesManagmentSystemDbContext dbcontext)
         {
