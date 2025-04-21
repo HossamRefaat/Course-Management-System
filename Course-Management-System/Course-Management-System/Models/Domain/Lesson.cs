@@ -30,6 +30,7 @@ namespace Course_Management_System.Models.Domain
         public string InstructorId { get; set; }
 
         //Nav props
+        public Quiz? Quiz { get; set; }
         public Module Module { get; set; }
     }
 }

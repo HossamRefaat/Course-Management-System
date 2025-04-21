@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Course_Management_System.Migrations.CoursesManagmentSystemDb
 {
     [DbContext(typeof(CoursesManagmentSystemDbContext))]
-    [Migration("20250418231243_Add Enrollment Table")]
-    partial class AddEnrollmentTable
+    [Migration("20250420142641_Add QuizAttempt-Student relation")]
+    partial class AddQuizAttemptStudentrelation
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -214,6 +214,106 @@ namespace Course_Management_System.Migrations.CoursesManagmentSystemDb
                     b.ToTable("Modules");
                 });
 
+            modelBuilder.Entity("Course_Management_System.Models.Domain.Quiz", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid>("LessonId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("LessonId")
+                        .IsUnique();
+
+                    b.ToTable("Quizzes");
+                });
+
+            modelBuilder.Entity("Course_Management_System.Models.Domain.QuizAnswer", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<bool>("IsCorrect")
+                        .HasColumnType("bit");
+
+                    b.Property<Guid>("QuizAttemptId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("QuizQuestionId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("SelectedAnswer")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("QuizAttemptId");
+
+                    b.ToTable("QuizAnswers");
+                });
+
+            modelBuilder.Entity("Course_Management_System.Models.Domain.QuizAttempt", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("AttemptedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid>("QuizId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<double>("Score")
+                        .HasColumnType("float");
+
+                    b.Property<string>("StudentId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("StudentId");
+
+                    b.ToTable("QuizAttempts");
+                });
+
+            modelBuilder.Entity("Course_Management_System.Models.Domain.QuizQuestion", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("CorrectAnswer")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Options")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Question")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid>("QuizId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("QuizId");
+
+                    b.ToTable("QuizQuestions");
+                });
+
             modelBuilder.Entity("Course_Management_System.Models.Domain.Video", b =>
                 {
                     b.Property<Guid>("Id")
@@ -295,6 +395,48 @@ namespace Course_Management_System.Migrations.CoursesManagmentSystemDb
                     b.Navigation("Course");
                 });
 
+            modelBuilder.Entity("Course_Management_System.Models.Domain.Quiz", b =>
+                {
+                    b.HasOne("Course_Management_System.Models.Domain.Lesson", "Lesson")
+                        .WithOne("Quiz")
+                        .HasForeignKey("Course_Management_System.Models.Domain.Quiz", "LessonId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Lesson");
+                });
+
+            modelBuilder.Entity("Course_Management_System.Models.Domain.QuizAnswer", b =>
+                {
+                    b.HasOne("Course_Management_System.Models.Domain.QuizAttempt", null)
+                        .WithMany("Answers")
+                        .HasForeignKey("QuizAttemptId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Course_Management_System.Models.Domain.QuizAttempt", b =>
+                {
+                    b.HasOne("CourseManagementSystem.API.Models.ApplicationUser", "Student")
+                        .WithMany()
+                        .HasForeignKey("StudentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Student");
+                });
+
+            modelBuilder.Entity("Course_Management_System.Models.Domain.QuizQuestion", b =>
+                {
+                    b.HasOne("Course_Management_System.Models.Domain.Quiz", "Quiz")
+                        .WithMany("Questions")
+                        .HasForeignKey("QuizId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Quiz");
+                });
+
             modelBuilder.Entity("Course_Management_System.Models.Domain.Course", b =>
                 {
                     b.Navigation("Enrollments");
@@ -302,9 +444,24 @@ namespace Course_Management_System.Migrations.CoursesManagmentSystemDb
                     b.Navigation("Modules");
                 });
 
+            modelBuilder.Entity("Course_Management_System.Models.Domain.Lesson", b =>
+                {
+                    b.Navigation("Quiz");
+                });
+
             modelBuilder.Entity("Course_Management_System.Models.Domain.Module", b =>
                 {
                     b.Navigation("Lessons");
+                });
+
+            modelBuilder.Entity("Course_Management_System.Models.Domain.Quiz", b =>
+                {
+                    b.Navigation("Questions");
+                });
+
+            modelBuilder.Entity("Course_Management_System.Models.Domain.QuizAttempt", b =>
+                {
+                    b.Navigation("Answers");
                 });
 #pragma warning restore 612, 618
         }

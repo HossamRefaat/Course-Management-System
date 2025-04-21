@@ -26,7 +26,7 @@ namespace Course_Management_System.Repositories.Implementation
 
         public async Task<Lesson>? DeleteLessonByIdAsync(Guid lessonId)
         {
-            var lesson = context.Lessons.Find(lessonId);
+            var lesson = await context.Lessons.FindAsync(lessonId);
             if (lesson == null) return null;
             context.Lessons.Remove(lesson);
             await context.SaveChangesAsync();
@@ -36,6 +36,8 @@ namespace Course_Management_System.Repositories.Implementation
         public async Task<Lesson>? GetLessonByIdAsync(Guid lessonId)
         {
             return await context.Lessons
+                .Include(l => l.Quiz)
+                .ThenInclude(q => q.Questions)
                 .FirstOrDefaultAsync(l => l.Id == lessonId);
         }
 

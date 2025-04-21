@@ -37,5 +37,9 @@ namespace Course_Management_System.Data
         public DbSet<Video> Videos { get; set; }
         public DbSet<Lesson> Lessons { get; set; }
         public DbSet<Enrollment> Enrollments { get; set; }
+        public DbSet<Quiz> Quizzes { get; set; }
+        public DbSet<QuizQuestion> QuizQuestions { get; set; }
+        public DbSet<QuizAttempt> QuizAttempts { get; set; }
+        public DbSet<QuizAnswer> QuizAnswers { get; set; }
     }
 }
