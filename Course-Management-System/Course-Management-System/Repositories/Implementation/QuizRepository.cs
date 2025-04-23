@@ -15,6 +15,15 @@ namespace Course_Management_System.Repositories.Implementation
             this.context = dbContext;
         }
 
+        public async Task<bool>? AddAnswerToQuizAttemptQuestionAsync(QuizAnswer answer)
+        {
+            await context.QuizAnswers.AddAsync(answer);
+
+            await context.SaveChangesAsync(); //I should impelemnt unit of work
+
+            return true;
+        }
+
         public async Task<bool> AddQuestionToQuizAsync(QuizQuestion question)
         {
             var quizExists = await context.Quizzes.AnyAsync(q => q.Id == question.QuizId);
@@ -34,6 +43,13 @@ namespace Course_Management_System.Repositories.Implementation
             await context.Quizzes.AddAsync(quiz);
             await context.SaveChangesAsync();
             return quiz;
+        }
+
+        public async Task<bool>? AddQuizAttemptAsync(QuizAttempt attempt)
+        {
+            await context.QuizAttempts.AddAsync(attempt);
+            await context.SaveChangesAsync();
+            return true;
         }
 
         public async Task<bool>? DeleteQuestionAsync(Guid id)
@@ -60,6 +76,32 @@ namespace Course_Management_System.Repositories.Implementation
         {
             return await context.QuizQuestions
                 .FirstOrDefaultAsync(q => q.Id == id);
+        }
+
+        public async Task<QuizAttempt>? GetQuizAttemptByUserIdAsync(string id)
+        {
+            return await context.QuizAttempts
+                .Where(q => q.StudentId == id)
+                .FirstOrDefaultAsync();
+        }
+
+        public async Task<QuizAttempt>? GetQuizAttemptsByQuizIdAndStudentId(Guid quizId, string studentId)
+        {
+            return await context.QuizAttempts
+                .Include(q => q.Answers)
+                .ThenInclude(a => a.Question)
+                .Where(q => q.QuizId == quizId && q.StudentId == studentId)
+                .FirstOrDefaultAsync();
+        }
+
+        public async Task<IEnumerable<QuizAttempt>>? GetQuizAttemptsByQuizIdAsync(Guid id)
+        {
+            return await context.QuizAttempts
+                .Include(s => s.Student)
+                .Include(q => q.Answers)
+                .ThenInclude(a => a.Question)
+                .Where(q => q.QuizId == id)
+                .ToListAsync();
         }
 
         public async Task<Quiz?> GetQuizByIdAsync(Guid id)

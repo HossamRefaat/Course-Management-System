@@ -254,6 +254,8 @@ namespace Course_Management_System.Migrations.CoursesManagmentSystemDb
 
                     b.HasIndex("QuizAttemptId");
 
+                    b.HasIndex("QuizQuestionId");
+
                     b.ToTable("QuizAnswers");
                 });
 
@@ -268,9 +270,6 @@ namespace Course_Management_System.Migrations.CoursesManagmentSystemDb
 
                     b.Property<Guid>("QuizId")
                         .HasColumnType("uniqueidentifier");
-
-                    b.Property<double>("Score")
-                        .HasColumnType("float");
 
                     b.Property<string>("StudentId")
                         .IsRequired()
@@ -410,6 +409,14 @@ namespace Course_Management_System.Migrations.CoursesManagmentSystemDb
                         .HasForeignKey("QuizAttemptId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.HasOne("Course_Management_System.Models.Domain.QuizQuestion", "Question")
+                        .WithMany()
+                        .HasForeignKey("QuizQuestionId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Question");
                 });
 
             modelBuilder.Entity("Course_Management_System.Models.Domain.QuizAttempt", b =>

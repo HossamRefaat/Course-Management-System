@@ -28,6 +28,21 @@ namespace Course_Management_System.Data
                 .WithMany(c => c.Enrollments)
                 .HasForeignKey(e => e.CourseId)
                 .OnDelete(DeleteBehavior.Cascade); // Deleting a course deletes enrollments
+
+
+            // Configure QuizAnswer -> QuizQuestion relationship
+            modelBuilder.Entity<QuizAnswer>()
+                .HasOne(qa => qa.Question)
+                .WithMany()
+                .HasForeignKey(qa => qa.QuizQuestionId)
+                .OnDelete(DeleteBehavior.Restrict); // Prevent cascade delete for QuizQuestion
+
+            // Configure QuizQuestion -> Quiz relationship
+            modelBuilder.Entity<QuizQuestion>()
+                .HasOne(qq => qq.Quiz)
+                .WithMany(q => q.Questions)
+                .HasForeignKey(qq => qq.QuizId)
+                .OnDelete(DeleteBehavior.Cascade); // Allow cascade delete for Quiz
         }
 
 

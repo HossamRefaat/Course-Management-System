@@ -493,6 +493,43 @@
   },
   {
     "ContainingType": "Course_Management_System.Controllers.QuizController",
+    "Method": "AddAttempts",
+    "RelativePath": "api/Quiz/{id}/attempts",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "Course_Management_System.Models.DTO.AddQuizAnswerRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Course_Management_System.Controllers.QuizController",
+    "Method": "GetQuizAttempts",
+    "RelativePath": "api/Quiz/{id}/attempts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Course_Management_System.Controllers.QuizController",
     "Method": "CreateQuestion",
     "RelativePath": "api/Quiz/{id}/questions",
     "HttpMethod": "POST",
@@ -538,6 +575,22 @@
     "Method": "DeleteQuizQuestion",
     "RelativePath": "api/Quiz/{id}/questions",
     "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Course_Management_System.Controllers.QuizController",
+    "Method": "GetQuizAttempt",
+    "RelativePath": "api/Quiz/quiz-attempts/{id}",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [

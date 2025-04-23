@@ -12,6 +12,11 @@ namespace Course_Management_System.Repositories.Interfaces
         Task<QuizQuestion>? GetQuestionByIdAsync(Guid id);
         Task<bool>? UpdateQuestionAsync(QuizQuestion question);
         Task<bool>? DeleteQuestionAsync(Guid id);
+        Task<bool>? AddAnswerToQuizAttemptQuestionAsync(QuizAnswer answer);
+        Task<bool>? AddQuizAttemptAsync(QuizAttempt attempt);
+        Task<QuizAttempt>? GetQuizAttemptByUserIdAsync(string id);
+        Task <IEnumerable<QuizAttempt>>? GetQuizAttemptsByQuizIdAsync(Guid id);
+        Task <QuizAttempt>? GetQuizAttemptsByQuizIdAndStudentId(Guid quizId, string studentId);
         //Task<IEnumerable<Quiz>>? GetAllQuizzesAsync();
     }
 }

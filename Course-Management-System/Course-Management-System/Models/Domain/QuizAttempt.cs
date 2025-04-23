@@ -11,8 +11,7 @@ namespace Course_Management_System.Models.Domain
         [ForeignKey("Student")]
         public string StudentId { get; set; }
 
-        public DateTime AttemptedAt { get; set; }
-        public double Score { get; set; }
+        public DateTime AttemptedAt { get; set; } = DateTime.Now;
 
         public ICollection<QuizAnswer> Answers { get; set; }
         public ApplicationUser Student { get; set; }

@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Course_Management_System.Migrations.CoursesManagmentSystemDb
 {
     /// <inheritdoc />
-    public partial class AddQuizTables : Migration
+    public partial class AddQuizQuestionnavproptoQuizAnswerentity : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -39,21 +39,6 @@ namespace Course_Management_System.Migrations.CoursesManagmentSystemDb
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_ApplicationUsers", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "QuizAttempts",
-                columns: table => new
-                {
-                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    QuizId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    StudentId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    AttemptedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    Score = table.Column<double>(type: "float", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_QuizAttempts", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -94,22 +79,21 @@ namespace Course_Management_System.Migrations.CoursesManagmentSystemDb
                 });
 
             migrationBuilder.CreateTable(
-                name: "QuizAnswers",
+                name: "QuizAttempts",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    QuizAttemptId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    QuizQuestionId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    SelectedAnswer = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    IsCorrect = table.Column<bool>(type: "bit", nullable: false)
+                    QuizId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    StudentId = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    AttemptedAt = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_QuizAnswers", x => x.Id);
+                    table.PrimaryKey("PK_QuizAttempts", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_QuizAnswers_QuizAttempts_QuizAttemptId",
-                        column: x => x.QuizAttemptId,
-                        principalTable: "QuizAttempts",
+                        name: "FK_QuizAttempts_ApplicationUsers_StudentId",
+                        column: x => x.StudentId,
+                        principalTable: "ApplicationUsers",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -224,6 +208,33 @@ namespace Course_Management_System.Migrations.CoursesManagmentSystemDb
                         onDelete: ReferentialAction.Cascade);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "QuizAnswers",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    QuizAttemptId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    QuizQuestionId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    SelectedAnswer = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    IsCorrect = table.Column<bool>(type: "bit", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_QuizAnswers", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_QuizAnswers_QuizAttempts_QuizAttemptId",
+                        column: x => x.QuizAttemptId,
+                        principalTable: "QuizAttempts",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_QuizAnswers_QuizQuestions_QuizQuestionId",
+                        column: x => x.QuizQuestionId,
+                        principalTable: "QuizQuestions",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                });
+
             migrationBuilder.CreateIndex(
                 name: "IX_Courses_InstructorId",
                 table: "Courses",
@@ -255,6 +266,16 @@ namespace Course_Management_System.Migrations.CoursesManagmentSystemDb
                 column: "QuizAttemptId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_QuizAnswers_QuizQuestionId",
+                table: "QuizAnswers",
+                column: "QuizQuestionId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_QuizAttempts_StudentId",
+                table: "QuizAttempts",
+                column: "StudentId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_QuizQuestions_QuizId",
                 table: "QuizQuestions",
                 column: "QuizId");
@@ -276,13 +297,13 @@ namespace Course_Management_System.Migrations.CoursesManagmentSystemDb
                 name: "QuizAnswers");
 
             migrationBuilder.DropTable(
-                name: "QuizQuestions");
-
-            migrationBuilder.DropTable(
                 name: "Videos");
 
             migrationBuilder.DropTable(
                 name: "QuizAttempts");
+
+            migrationBuilder.DropTable(
+                name: "QuizQuestions");
 
             migrationBuilder.DropTable(
                 name: "Quizzes");

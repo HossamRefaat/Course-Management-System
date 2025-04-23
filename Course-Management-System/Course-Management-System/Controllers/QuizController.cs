@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Validations;
 using System.Security.Claims;
 using System.Text.Json;
 
@@ -123,6 +124,124 @@ namespace Course_Management_System.Controllers
         public async Task<IActionResult> DeleteQuizQuestion([FromRoute] Guid id)
         {
             return await quizRepository.DeleteQuestionAsync(id)? Ok() : NotFound();
+        }
+
+
+        [HttpPost("{id:guid}/attempts")]
+        [Authorize(Roles = "Student")]
+        public async Task<IActionResult> AddAttempts([FromRoute] Guid id, AddQuizAnswerRequestDto request)
+        {
+            var quiz = await quizRepository.GetQuizByIdAsync(id);
+            if(quiz is null) return NotFound("Quiz not found");
+
+            var currentUser = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            var firstTime = await quizRepository.GetQuizAttemptByUserIdAsync(currentUser);
+            if ((firstTime is not null) && (id == firstTime.QuizId))
+                return BadRequest("You already submitted this quiz.");
+
+            var quizAttempt = new QuizAttempt
+            {
+                Id = Guid.NewGuid(),
+                QuizId = id,
+                StudentId = currentUser,
+                AttemptedAt = DateTime.Now
+            };
+
+            var quizAttemptRes = await quizRepository.AddQuizAttemptAsync(quizAttempt);
+            if (!quizAttemptRes) return BadRequest();
+
+            int correct = 0;
+            foreach (var answer in request.Answers)
+            {
+                var question = await quizRepository.GetQuestionByIdAsync(answer.QuestionId);
+                if (question == null) return NotFound("Question not found");
+
+                var quizAnswer = new QuizAnswer
+                {
+                    Id = Guid.NewGuid(),
+                    QuizAttemptId = quizAttempt.Id,
+                    QuizQuestionId = answer.QuestionId,
+                    SelectedAnswer = answer.SelectedAnswer,
+                    IsCorrect = answer.SelectedAnswer == question.CorrectAnswer
+                };
+
+                var quizAnswerRes = await quizRepository.AddAnswerToQuizAttemptQuestionAsync(quizAnswer);
+                if (!quizAnswerRes) return BadRequest();
+
+                if (quizAnswer.IsCorrect) correct++;
+            }
+
+            var result = new
+            {
+                TotalQuestions = quiz.Questions.Count,
+                CorrectAnswers = correct,
+                Score = (double)correct / quiz.Questions.Count * 100
+            };
+
+            return Ok(result);
+        }
+
+        [HttpGet("{id:guid}/attempts")]
+        [Authorize(Roles = "Instructor")]
+        public async Task<IActionResult> GetQuizAttempts([FromRoute] Guid id)
+        {
+            var quiz = await quizRepository.GetQuizByIdAsync(id);
+            if (quiz is null) return NotFound("Quiz not found");
+            var attempts = await quizRepository.GetQuizAttemptsByQuizIdAsync(id);
+            var result = new List<GetAttemptRespone>();
+            foreach (var attempt in attempts) 
+            {
+                var attemptRespone = new GetAttemptRespone()
+                {
+                    StudentName = attempt.Student.Name,
+                    QuestionRespone = new List<QuestionAttemptRespone>()
+                };
+
+                foreach (var answer in attempt.Answers)
+                {
+                    var questionRespone = new QuestionAttemptRespone
+                    {
+                        Question = answer.Question.Question,
+                        CorrectAnswer = answer.Question.CorrectAnswer,
+                        StudentAnswer = answer.SelectedAnswer,
+                    };
+
+                    attemptRespone.QuestionRespone.Add(questionRespone);
+                }
+
+                result.Add(attemptRespone);
+            }
+            return Ok(result);
+        }
+
+        [HttpGet("quiz-attempts/{id:guid}")]
+        [Authorize(Roles = "Student")]
+        public async Task<IActionResult> GetQuizAttempt([FromRoute] Guid id)
+        {
+            var currentUser = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (currentUser is null) return Unauthorized();
+
+            var attempt = await quizRepository.GetQuizAttemptsByQuizIdAndStudentId(id, currentUser);
+
+            if (attempt is null) return BadRequest("You didn't take this exam before");
+
+            var res = new List<QuestionAttemptRespone>();
+
+            foreach(var answer in attempt.Answers)
+            {
+                res.Add
+                (
+                    new QuestionAttemptRespone
+                    {
+                        Question = answer.Question.Question,
+                        StudentAnswer = answer.SelectedAnswer,
+                        CorrectAnswer = answer.Question.CorrectAnswer
+                    }
+                );
+            }
+
+            return Ok(res);
         }
     }
 }
