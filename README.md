@@ -29,6 +29,12 @@ A complete and scalable **Course Management System** built using **ASP.NET Core*
 - View completed lessons per module
 - Easy tracking of progress through each course
 
+### 🧑‍💻 Admin Features: User Management
+- View all users.
+- Assign multiple roles.
+- Delete users.
+
+
 ## 🧱 Tech Stack
 
 - **Backend:** ASP.NET Core (.NET 8)
