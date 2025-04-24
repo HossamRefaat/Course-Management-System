@@ -162,6 +162,5 @@ namespace Course_Management_System.Controllers
 
             return Ok(result);
         }
-
     }
 }
