@@ -43,8 +43,21 @@ namespace Course_Management_System.Data
                 .WithMany(q => q.Questions)
                 .HasForeignKey(qq => qq.QuizId)
                 .OnDelete(DeleteBehavior.Cascade); // Allow cascade delete for Quiz
-        }
 
+            // Configure CompletedLesson -> ApplicationUser relationship
+            modelBuilder.Entity<CompletedLesson>()
+                .HasOne(cl => cl.User)
+                .WithMany()
+                .HasForeignKey(cl => cl.StudentId)
+                .OnDelete(DeleteBehavior.Restrict); // Prevent cascade delete for Student
+
+            // Configure CompletedLesson -> Lesson relationship
+            modelBuilder.Entity<CompletedLesson>()
+                .HasOne(cl => cl.Lesson)
+                .WithMany()
+                .HasForeignKey(cl => cl.LessonId)
+                .OnDelete(DeleteBehavior.Cascade); // Allow cascade delete for Lesson
+        }
 
         public DbSet<Course> Courses { get; set; }
         public DbSet<ApplicationUser> ApplicationUsers { get; set; }
@@ -56,5 +69,6 @@ namespace Course_Management_System.Data
         public DbSet<QuizQuestion> QuizQuestions { get; set; }
         public DbSet<QuizAttempt> QuizAttempts { get; set; }
         public DbSet<QuizAnswer> QuizAnswers { get; set; }
+        public DbSet<CompletedLesson> CompletedLessons { get; set; }
     }
 }

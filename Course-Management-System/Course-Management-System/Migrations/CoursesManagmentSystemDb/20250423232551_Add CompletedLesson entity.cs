@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Course_Management_System.Migrations.CoursesManagmentSystemDb
 {
     /// <inheritdoc />
-    public partial class AddQuizQuestionnavproptoQuizAnswerentity : Migration
+    public partial class AddCompletedLessonentity : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -169,6 +169,32 @@ namespace Course_Management_System.Migrations.CoursesManagmentSystemDb
                 });
 
             migrationBuilder.CreateTable(
+                name: "CompletedLessons",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    StudentId = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    LessonId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    CompletedAt = table.Column<DateTime>(type: "datetime2", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_CompletedLessons", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_CompletedLessons_ApplicationUsers_StudentId",
+                        column: x => x.StudentId,
+                        principalTable: "ApplicationUsers",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_CompletedLessons_Lessons_LessonId",
+                        column: x => x.LessonId,
+                        principalTable: "Lessons",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Quizzes",
                 columns: table => new
                 {
@@ -236,6 +262,16 @@ namespace Course_Management_System.Migrations.CoursesManagmentSystemDb
                 });
 
             migrationBuilder.CreateIndex(
+                name: "IX_CompletedLessons_LessonId",
+                table: "CompletedLessons",
+                column: "LessonId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_CompletedLessons_StudentId",
+                table: "CompletedLessons",
+                column: "StudentId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Courses_InstructorId",
                 table: "Courses",
                 column: "InstructorId");
@@ -290,6 +326,9 @@ namespace Course_Management_System.Migrations.CoursesManagmentSystemDb
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropTable(
+                name: "CompletedLessons");
+
             migrationBuilder.DropTable(
                 name: "Enrollments");
 

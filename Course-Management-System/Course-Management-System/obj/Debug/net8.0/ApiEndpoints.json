@@ -296,6 +296,54 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Course_Management_System.Controllers.LessonController",
+    "Method": "MarkLessonCompleted",
+    "RelativePath": "api/Lesson/{id}/progress",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Course_Management_System.Controllers.LessonController",
+    "Method": "MarkLessonUncompleted",
+    "RelativePath": "api/Lesson/{id}/progress",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Course_Management_System.Controllers.LessonController",
+    "Method": "GetCompletedLessonsForModule",
+    "RelativePath": "api/Lesson/{moduleId}/completed-lessons",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "moduleId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Course_Management_System.Controllers.ModuleController",
     "Method": "Create",
     "RelativePath": "api/Module/{courseId}",

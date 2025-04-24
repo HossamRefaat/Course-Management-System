@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Course_Management_System.Migrations.CoursesManagmentSystemDb
 {
     [DbContext(typeof(CoursesManagmentSystemDbContext))]
-    [Migration("20250423160203_Add QuizQuestion nav prop to QuizAnswer entity")]
-    partial class AddQuizQuestionnavproptoQuizAnswerentity
+    [Migration("20250423232551_Add CompletedLesson entity")]
+    partial class AddCompletedLessonentity
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -94,6 +94,31 @@ namespace Course_Management_System.Migrations.CoursesManagmentSystemDb
                     b.HasKey("Id");
 
                     b.ToTable("ApplicationUsers");
+                });
+
+            modelBuilder.Entity("Course_Management_System.Models.Domain.CompletedLesson", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CompletedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid>("LessonId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("StudentId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("LessonId");
+
+                    b.HasIndex("StudentId");
+
+                    b.ToTable("CompletedLessons");
                 });
 
             modelBuilder.Entity("Course_Management_System.Models.Domain.Course", b =>
@@ -340,6 +365,25 @@ namespace Course_Management_System.Migrations.CoursesManagmentSystemDb
                     b.HasKey("Id");
 
                     b.ToTable("Videos");
+                });
+
+            modelBuilder.Entity("Course_Management_System.Models.Domain.CompletedLesson", b =>
+                {
+                    b.HasOne("Course_Management_System.Models.Domain.Lesson", "Lesson")
+                        .WithMany()
+                        .HasForeignKey("LessonId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("CourseManagementSystem.API.Models.ApplicationUser", "User")
+                        .WithMany()
+                        .HasForeignKey("StudentId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Lesson");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("Course_Management_System.Models.Domain.Course", b =>

@@ -118,5 +118,50 @@ namespace Course_Management_System.Controllers
             if (lesson == null) return NotFound();
             return Ok(lesson);
         }
-    }   
+
+        [HttpPost("{id:guid}/progress")]
+        [Authorize(Roles = "Student")]
+        public async Task<IActionResult> MarkLessonCompleted([FromRoute] Guid id)
+        {
+            var userId = userManager.GetUserId(User);
+            var isCompleted = await lessonRepository.IsLessonCompleted(id);
+            if (!isCompleted)
+            {
+                var lessonsCompleleted = await lessonRepository
+                .MakeLessonsCompletedAsync(id, userId);
+
+                if (lessonsCompleleted) return Ok(lessonsCompleleted);
+            }
+             
+            return BadRequest("Lesson not found or is already completed");
+        }
+
+        [HttpDelete("{id:guid}/progress")]
+        [Authorize(Roles = "Student")]
+        public async Task<IActionResult> MarkLessonUncompleted([FromRoute] Guid id)
+        {
+            var userId = userManager.GetUserId(User);
+            if (userId == null) return Unauthorized();
+            return await lessonRepository.MakeLessonsUncompletedAsync(id, userId) ? Ok() : BadRequest("Error accured");
+        }
+
+        [HttpGet("{moduleId:guid}/completed-lessons")]
+        [Authorize(Roles = "Student")]
+        public async Task<IActionResult> GetCompletedLessonsForModule(Guid moduleId)
+        {
+            var studentId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var completedLessons = await lessonRepository.GetCompletedLessonsByModuleAsync(moduleId, studentId);
+
+            var result = completedLessons.Select(cl => new CompletedLessonDto
+            {
+                LessonId = cl.Lesson.Id,
+                Title = cl.Lesson.Title,
+                Type = cl.Lesson.Type,
+                CompletedAt = cl.CompletedAt
+            }).ToList();
+
+            return Ok(result);
+        }
+
+    }
 }

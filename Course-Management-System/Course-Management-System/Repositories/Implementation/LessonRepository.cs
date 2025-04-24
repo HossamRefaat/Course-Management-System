@@ -2,6 +2,7 @@
 using Course_Management_System.Models.Domain;
 using Course_Management_System.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
+using System.Linq.Expressions;
 
 namespace Course_Management_System.Repositories.Implementation
 {
@@ -48,10 +49,57 @@ namespace Course_Management_System.Repositories.Implementation
                 .ToListAsync();
         }
 
+        public async Task<bool> MakeLessonsCompletedAsync(Guid lessonId, string userId)
+        {
+            var lesson = await context.Lessons.FirstOrDefaultAsync(l => l.Id == lessonId);
+            if (lesson == null) return false;
+            var markCompleted = new CompletedLesson
+            {
+                Id = Guid.NewGuid(),
+                StudentId = userId,
+                LessonId = lessonId,
+                CompletedAt = DateTime.Now
+            };
+
+            await context.CompletedLessons.AddAsync(markCompleted);
+            await context.SaveChangesAsync();
+            return true;
+        }
+
+        public async Task<bool> MakeLessonsUncompletedAsync(Guid lessonId, string userId)
+        {
+            var lesson = await context.CompletedLessons
+                .Where(l => l.LessonId == lessonId)
+                .FirstOrDefaultAsync();
+
+            if (lesson is null || userId != lesson.StudentId) return false;
+
+            context.CompletedLessons.Remove(lesson);
+            await context.SaveChangesAsync();
+            return true;
+        }
+
         public async Task UpdateLessonAsync(Lesson lesson)
         {
             context.Lessons.Update(lesson);
             await context.SaveChangesAsync();
+        }
+
+        public async Task<List<CompletedLesson>> GetCompletedLessonsByModuleAsync(Guid moduleId, string studentId)
+        {
+            return await context.CompletedLessons
+                .Include(cl => cl.Lesson)
+                .Where(cl => cl.Lesson.ModuleId == moduleId && cl.StudentId == studentId)
+                .ToListAsync();
+        }
+
+        public async Task<bool> IsLessonCompleted(Guid lessonId)
+        {
+            var isCompleted = await context.CompletedLessons
+                .Where(l => l.LessonId == lessonId)
+                .FirstOrDefaultAsync();
+
+            return isCompleted is null ? false : true;
         }
     }
 }
