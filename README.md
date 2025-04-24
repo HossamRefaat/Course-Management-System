@@ -22,11 +22,11 @@ A complete and scalable **Course Management System** built using **ASP.NET Core*
 - Instructors can create quizzes for any lesson
 - Students can attempt each quiz only once
 - Each attempt is scored and saved
-- Attempt history available for instructors (includes:
+- Attempt history available for instructors includes:
   - Student Name
   - Question
   - Student Answer
-  - Correct Answer)
+  - Correct Answer
 
 ### 🧠 Student Progress
 - Students can mark lessons as completed
@@ -43,7 +43,7 @@ A complete and scalable **Course Management System** built using **ASP.NET Core*
   - Repository Pattern
   - DTOs
   - AutoMapper
-  - 
+    
 ## 📂 Project Structure
 
 ```
